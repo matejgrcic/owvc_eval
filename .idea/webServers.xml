@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="ec37b5e3-de7a-4b53-bd9c-1e1088178df6" name="strider">
+        <fileTransfer rootFolder="/home/mgrcic" accessType="SFTP" host="strider.zemris.fer.hr" port="22" sshConfigId="54859111-0964-47c8-8c38-e7fff0d3e082" sshConfig="mgrcic@strider.zemris.fer.hr:22 agent" authAgent="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
