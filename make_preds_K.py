@@ -138,7 +138,7 @@ def run(model_path, data_file, dataroot, exp_name, out_dir, accimage=False, batc
                 # Adjust these according to your model
                 # output = nn_func.softmax(output[0], 1)
                 # output = nn_func.softmax(output[:, :413], 1).cpu()
-                zero_vec = torch.zeros((output.shape[0], 1))
+                zero_vec = torch.zeros((output.shape[0], 1)).cuda()
                 output = nn_func.softmax(output, dim=1)
                 output = torch.cat((zero_vec, output), dim=1)
                 # ood_probs = nn_func.softmax(ood_out, dim=1)[:, 0]
