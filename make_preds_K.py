@@ -13,7 +13,7 @@ import torch.nn as nn
 # from data_loader import EvalDataset
 # from resnet_th import resnet18_th as resnet18
 from efficientnet_pytorch import EfficientNet, EfficientNetTH
-efficientnet = lambda num_classes: EfficientNet.from_name('efficientnet-b4', num_classes=num_classes)
+efficientnet = lambda num_classes: EfficientNet.from_name('efficientnet-b3', num_classes=num_classes)
 
 def get_parser():
     """"Defines the command line arguments"""

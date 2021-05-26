@@ -12,7 +12,7 @@ import torch.nn as nn
 # Replace this with your data loader and edit the calls accordingly
 # from data_loader import EvalDataset
 from efficientnet_pytorch import EfficientNet, EfficientNetTH
-efficientnet_th = lambda num_classes: EfficientNetTH.from_name('efficientnet-b4', num_classes=num_classes)
+efficientnet_th = lambda num_classes: EfficientNetTH.from_name('efficientnet-b3', num_classes=num_classes)
 
 def get_parser():
     """"Defines the command line arguments"""
